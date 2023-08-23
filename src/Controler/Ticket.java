@@ -4,6 +4,7 @@
  */
 package Controler;
 
+import static java.util.Collections.list;
 import static javax.swing.text.html.HTML.Tag.P;
 
 /**
@@ -14,7 +15,8 @@ public class Ticket {
    public static int numP = 0;
    public static int numA = 0;
    public static int numC = 0;
-
+   private listTicket list;
+   
     public static int getNumP() {
         return numP;
     }
@@ -40,10 +42,17 @@ public class Ticket {
     }
 
     public Ticket() {
-        switch (this.numP){
+        switch (Ticket.agregar){
             case numP:
                 numP++;
-                list.agragarP
+                list.agregarP(this);
+            case numC:
+                numC++;
+                list.agregarC(this);
+            case numA:
+                numA++;
+                list.agregar(this);
+                   
     }
                 
     }
