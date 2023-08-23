@@ -4,46 +4,49 @@
  */
 package Controler;
 
+import static javax.swing.text.html.HTML.Tag.P;
+
 /**
  *
  * @author Student
  */
 public class Ticket {
-    private String plataforma;
-    private String cajas;
-    private String preferencial; 
+   public static int numP = 0;
+   public static int numA = 0;
+   public static int numC = 0;
 
-    public String getPlataforma() {
-        return plataforma;
+    public static int getNumP() {
+        return numP;
     }
 
-    public void setPlataforma(String plataforma) {
-        this.plataforma = plataforma;
+    public static void setNumP(int numP) {
+        Ticket.numP = numP;
     }
 
-    public String getCajas() {
-        return cajas;
+    public static int getNumA() {
+        return numA;
     }
 
-    public void setCajas(String cajas) {
-        this.cajas = cajas;
+    public static void setNumA(int numA) {
+        Ticket.numA = numA;
     }
 
-    public String getPreferencial() {
-        return preferencial;
+    public static int getNumC() {
+        return numC;
     }
 
-    public void setPreferencial(String preferencial) {
-        this.preferencial = preferencial;
+    public static void setNumC(int numC) {
+        Ticket.numC = numC;
     }
-    
-    
 
-    public Ticket(String plataforma, String cajas, String preferencial) {
-        this.plataforma = plataforma;
-        this.cajas = cajas;
-        this.preferencial = preferencial;
+    public Ticket() {
+        switch (this.numP){
+            case numP:
+                numP++;
+                list.agragarP
     }
-    
-    
+                
+    }
+   
+   
 }
